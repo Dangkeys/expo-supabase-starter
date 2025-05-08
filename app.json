@@ -17,18 +17,18 @@
         "usesNonExemptEncryption": false
       },
       "splash": {
-        "image": "./assets/splash.png",
+        "image": "./assets/images/splash-icon.png",
         "resizeMode": "cover",
         "backgroundColor": "#ffffff",
         "dark": {
           "backgroundColor": "#000000",
           "resizeMode": "cover",
-          "image": "./assets/splash-dark.png"
+          "image": "./assets/splash-icon-dark.png"
         }
       },
       "icon": {
-        "dark": "./assets/icon-dark.png",
-        "light": "./assets/icon.png"
+        "dark": "./assets/images/icon-dark.png",
+        "light": "./assets/images/icon.png"
       },
       "bundleIdentifier": "com.flemingvincent.ExpoSupabaseStarter"
     },
@@ -37,13 +37,13 @@
         "foregroundImage": "./assets/adaptive-icon.png"
       },
       "splash": {
-        "image": "./assets/splash.png",
+        "image": "./assets/images/splash-icon.png",
         "resizeMode": "cover",
         "backgroundColor": "#ffffff",
         "dark": {
           "backgroundColor": "#000000",
           "resizeMode": "cover",
-          "image": "./assets/splash-dark.png"
+          "image": "./assets/images/splash-icon-dark.png"
         }
       }
     },

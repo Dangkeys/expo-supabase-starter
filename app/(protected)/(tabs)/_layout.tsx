@@ -3,6 +3,7 @@ import { Tabs } from "expo-router";
 
 import { useColorScheme } from "@/lib/useColorScheme";
 import { colors } from "@/constants/colors";
+import { FontAwesome } from '@expo/vector-icons';
 
 export default function TabsLayout() {
 	const { colorScheme } = useColorScheme();
@@ -24,8 +25,24 @@ export default function TabsLayout() {
 				tabBarShowLabel: false,
 			}}
 		>
-			<Tabs.Screen name="index" options={{ title: "Home" }} />
-			<Tabs.Screen name="settings" options={{ title: "Settings" }} />
+			<Tabs.Screen 
+				name="index" 
+				options={{ 
+					title: "Home", 
+					tabBarIcon: ({ color }) => (
+						<FontAwesome name="home" size={24} color={color} />
+					)
+				}} 
+			/>
+			<Tabs.Screen 
+				name="settings" 
+				options={{ 
+					title: "Settings",
+					tabBarIcon: ({ color }) => (
+						<FontAwesome name="gear" size={24} color={color} />
+					)
+				}} 
+			/>
 		</Tabs>
 	);
 }
